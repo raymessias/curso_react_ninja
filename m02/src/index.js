@@ -18,7 +18,6 @@ const renderApp = AppInstance => {
 
 renderApp(App)
 
-
 if (module.hot) {
   module.hot.accept('./app', () => {
     const AppReload = require('./app').default
