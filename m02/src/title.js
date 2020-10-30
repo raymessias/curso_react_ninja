@@ -2,6 +2,7 @@
 
 import React from 'react'
 
+// Pure function
 const Title = ({ name, lastname }) => (
   <h1>Olá {`${name} ${lastname}`}</h1>
 )
