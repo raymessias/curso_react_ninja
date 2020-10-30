@@ -1,20 +1,21 @@
 'use strict'
 
 import React, { Component } from 'react'
-import Title from './title'
+// import Title from './title'
+import Square from './square'
 
 // ES6
 class App extends Component {
   render () {
     return (
-      <div className='container'>
-        <Title name='Pedro' />
+      <div className='container' onClick={e => alert('clicou')}>
+        <Square />
       </div>
     )
   }
 }
 
-//ES5
+// ES5
 // const App = React.createClass({
 //   render: function () {
 //     return (
