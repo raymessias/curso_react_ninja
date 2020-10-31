@@ -2,11 +2,17 @@
 
 import React from 'react'
 
+// Sem Destructuring
+// const Button = props => (
+//   <button onClick={props.handleClick}>
+//     {props.children}
+//   </button>
+// )
+
 // Utilizando o destructuring
-// const Button = ({ children, handleClick }) => (
-const Button = props => (
-  <button onClick={props.handleClick}>
-    {props.children}
+const Button = ({ children, handleClick }) => (
+  <button onClick={handleClick}>
+    {children}
   </button>
 )
 
