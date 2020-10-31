@@ -3,12 +3,14 @@
 import React, { Component } from 'react'
 import Button from './button'
 import Square from './square'
+import Timer from './timer'
 
 class App extends Component {
   constructor () {
     super()
     this.state = {
-      color: 'brown'
+      color: 'brown',
+      showTimer: true
     }
   }
 
@@ -24,6 +26,13 @@ class App extends Component {
             {color}
           </Button>
         ))}
+        {this.state.showTimer && <Timer />}
+        <button onClick={() => {
+          this.setState({ showTimer: !this.state.showTimer })
+        }}
+        >
+          Show / hide Timer
+        </button>
       </div>
     )
   }
